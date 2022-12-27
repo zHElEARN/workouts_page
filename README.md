@@ -10,3 +10,4 @@
 ## 特别感谢
 - @[ben-29](https://github.com/ben-29) 特别棒的项目 [workouts_page](https://github.com/ben-29/workouts_page)
 - @[yihong0618](https://github.com/yihong0618) 特别棒的项目 [running_page](https://github.com/yihong0618/running_page)
+- @[geekplux](https://github.com/geekplux) 柱状图表组件 [activities/src/components/GroupBar/](https://github.com/geekplux/activities/tree/master/src/components/GroupBar)
