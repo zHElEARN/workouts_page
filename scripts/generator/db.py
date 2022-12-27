@@ -95,7 +95,7 @@ def update_or_create_activity(session, run_activity):
                     )
                 # limit (only for the first time)
                 except:
-                    print("+++++++limit+++++++")
+                    print("=limit=")
                     time.sleep(2)
                     try:
                         location_country = str(

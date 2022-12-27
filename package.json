@@ -1,8 +1,8 @@
 {
   "name": "workouts_page",
-  "description": "ben_29",
+  "description": "Workouts Page",
   "version": "1.0.0",
-  "author": "Ben Bell <ben_29@live.com>",
+  "author": "Zhe_Learn <i@zhelearn.com>",
   "dependencies": {
     "@mapbox/mapbox-gl-language": "^1.0.0",
     "@mapbox/polyline": "^1.1.1",
@@ -54,7 +54,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ben-29/workouts_page"
+    "url": "https://github.com/Zhe_Learn/workouts_page"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

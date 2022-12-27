@@ -2,18 +2,26 @@ module.exports = {
   pathPrefix: '/workouts_page', // Change to `/workouts_page` when running on GitHub pages
   siteMetadata: {
     siteTitle: 'Workouts Map',
-    siteUrl: 'https://ben29.xyz',
-    logo: 'https://avatars3.githubusercontent.com/u/6956444?s=460&u=97e1062227c4088db3c987146455245c6fa78441',
+    siteUrl: 'https://workouts.zhelearn.com',
+    logo: 'https://dn-qiniu-avatar.qbox.me/avatar/d4f41dddaa1c0e34f901dde570e947ad',
     description: 'Personal Workouts Page',
     keywords: 'workouts, running, cycling, riding, roadtrip, hiking, swimming',
     navLinks: [
       {
-        name: 'Blog',
-        url: 'https://ben29.xyz',
+        name: 'ZL-NET',
+        url: 'https://zhelearn.com',
       },
       {
-        name: 'About',
-        url: 'https://github.com/ben-29/workouts_page/blob/master/README-CN.md',
+        name: 'GitHub',
+        url: 'https://github.com/zHElEARN',
+      },
+      {
+        name: 'Strava',
+        url: 'https://www.strava.com/athletes/65668450',
+      },
+      {
+        name: 'Garmin Connect',
+        url: 'https://connect.garmin.com/modern/profile/c9294bc0-5a7c-41b0-a9a5-650b60f28f60',
       },
     ],
   },
