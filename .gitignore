@@ -21,3 +21,4 @@ config.yaml
 
 scripts/data.db
 src/static/activities.json
+generate_svg.sh
