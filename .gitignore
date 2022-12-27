@@ -22,6 +22,7 @@ config.yaml
 scripts/data.db
 src/static/activities.json
 generate_svg.sh
+sync_strava.sh
 
 assets/*
 !assets/start.svg
