@@ -1,3 +1,4 @@
+import ParentSize from '@visx/responsive/lib/components/ParentSizeModern';
 import React, { useEffect, useState } from 'react';
 import Layout from 'src/components/Layout';
 import LocationStat from 'src/components/LocationStat';
@@ -20,6 +21,7 @@ import {
   sortDateFunc,
   titleForShow,
 } from 'src/utils/utils';
+import GroupBar from '../components/GroupBar';
 
 const Index = () => {
   const { siteTitle } = useSiteMetadata();
@@ -196,7 +198,12 @@ const Index = () => {
             thisYear={year}
           />
           {year === 'Total' ? (
+            <div>
+            <ParentSize style={{ marginTop:'50px'}}>
+              {({width}) => <GroupBar width={width} height={400} runs={runs} />}
+            </ParentSize>
             <SVGStat />
+            </div>
           ) : (
             <RunTable
               runs={runs}

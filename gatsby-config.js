@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/workouts_page', // Change to `/workouts_page` when running on GitHub pages
   siteMetadata: {
-    siteTitle: "Zhe_Learn's\nWorkouts Map",
+    siteTitle: "Zhe_Learn's Workouts Map",
     siteUrl: 'https://workouts.zhelearn.com',
     logo: 'https://dn-qiniu-avatar.qbox.me/avatar/d4f41dddaa1c0e34f901dde570e947ad',
     description: 'Personal Workouts Page',
