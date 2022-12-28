@@ -87,7 +87,7 @@ const RunMap = ({
           type="fill"
           paint={{
             'fill-color': PROVINCE_FILL_COLOR,
-            'fill-opacity': 0.2,
+            'fill-opacity': 0.7,
           }}
           filter={filterProvinces}
         />
