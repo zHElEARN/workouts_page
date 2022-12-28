@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MAIN_COLOR } from 'src/utils/const';
-import { sortDateFunc, sortDateFuncReverse } from 'src/utils/utils';
+import { sortDateFunc, sortDateFuncReverse, paceToSpeed } from 'src/utils/utils';
 import RunRow from './RunRow';
 import styles from './style.module.scss';
 
@@ -17,6 +17,10 @@ const RunTable = ({
     sortFuncInfo === 'Type' ? a.type > b.type ? 1:-1 : b.type < a.type ? -1:1;
   const sortKMFunc = (a, b) =>
     sortFuncInfo === 'KM' ? a.distance - b.distance : b.distance - a.distance;
+  const sortSpeedFunc = (a, b) =>
+    sortFuncInfo === 'Speed'
+      ? a.average_speed - b.average_speed
+      : b.average_speed - a.average_speed;
   const sortPaceFunc = (a, b) =>
     sortFuncInfo === 'Pace'
       ? a.average_speed - b.average_speed
@@ -45,6 +49,7 @@ const RunTable = ({
   const sortFuncMap = new Map([
     ['Type', sortTypeFunc],
     ['KM', sortKMFunc],
+    ['Speed', sortSpeedFunc],
     ['Pace', sortPaceFunc],
     ['BPM', sortBPMFunc],
     ['Time', sortRunTimeFunc],

@@ -34,7 +34,7 @@ const RunMap = ({
         mapRef.current = ref;
         const map = ref.getMap();
         if (map && IS_CHINESE) {
-          map.addControl(new MapboxLanguage({ defaultLanguage: 'zh-Hans' }));
+          map.addControl(new MapboxLanguage({ defaultLanguage: 'en' }));
         }
       }
     },
@@ -87,7 +87,7 @@ const RunMap = ({
           type="fill"
           paint={{
             'fill-color': PROVINCE_FILL_COLOR,
-            'fill-opacity': 0.2,
+            'fill-opacity': 0.7,
           }}
           filter={filterProvinces}
         />

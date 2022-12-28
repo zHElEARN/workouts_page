@@ -39,6 +39,11 @@ const formatPace = (d) => {
   return `${minutes}'${seconds.toFixed(0).toString().padStart(2, '0')}"`;
 };
 
+const paceToSpeed = (d) => {
+  if (Number.isNaN(d) || d == 0) return '0';
+  return ((1.0 / ((1000.0 / 60.0) * (1.0 / d))) * 60).toFixed(0).toString();
+}
+
 const formatRunTime = (distance,pace) => {
   if (Number.isNaN(distance) || Number.isNaN(pace)) {
     return '0min';
@@ -280,6 +285,7 @@ const sortDateFuncReverse = (a, b) => sortDateFunc(b, a);
 export {
   titleForShow,
   formatPace,
+  paceToSpeed,
   scrollToMap,
   locationForRun,
   intComma,
