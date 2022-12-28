@@ -6,7 +6,7 @@ const useHover = () => {
 
   const eventHandlers = {
     onMouseOver() {
-      setTimer(setTimeout(() => setHovered(true), 700));
+      setTimer(setTimeout(() => setHovered(true), 200));
     },
     onMouseOut() {
       clearTimeout(timer);
