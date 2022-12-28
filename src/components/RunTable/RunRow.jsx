@@ -1,6 +1,6 @@
 import React from 'react';
 import { MAIN_COLOR } from 'src/utils/const';
-import { formatPace, titleForRun, colorFromType, formatRunTime } from 'src/utils/utils';
+import { formatPace, titleForRun, colorFromType, formatRunTime, paceToSpeed } from 'src/utils/utils';
 import styles from './style.module.scss';
 
 const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
@@ -8,6 +8,8 @@ const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
   const pace = run.average_speed;
 
   const paceParts = pace ? formatPace(pace) : null;
+
+  const speed = pace ? `${paceToSpeed(pace)} kph` : null;
 
   const heartRate = run.average_heartrate;
 
@@ -38,6 +40,7 @@ const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
       <td>{run.name}</td>
       <td>{type}</td>
       <td>{distance}</td>
+      <td>{speed}</td>
       {pace && <td>{paceParts}</td>}
       <td>{heartRate && heartRate.toFixed(0)}</td>
       <td>{runTime}</td>
