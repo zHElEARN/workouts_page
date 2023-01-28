@@ -1,5 +1,6 @@
 import ParentSize from '@visx/responsive/lib/components/ParentSizeModern';
-import React, { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+import React, {useEffect, useState} from 'react';
 import Layout from 'src/components/Layout';
 import LocationStat from 'src/components/LocationStat';
 import RunMap from 'src/components/RunMap';
@@ -216,6 +217,8 @@ const Index = () => {
           )}
         </div>
       </div>
+      {/* Enable Audiences in Vercel Analytics: https://vercel.com/docs/concepts/analytics/audiences/quickstart */}
+      <Analytics />
     </Layout>
   );
 };
