@@ -1,6 +1,18 @@
 // const
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiemhlbGVhcm4iLCJhIjoiY2xjMnR3MXFzMXJmczN2bWRnMDk0cHkwaiJ9.5Hk5zVnEMLVMnwHveHHjeA';
-const MUNICIPALITY_CITIES_ARR = ['北京市', '上海市', '天津市', '重庆市', '香港特别行政区', '澳门特别行政区'];
+const MUNICIPALITY_CITIES_ARR = [
+  '北京市',
+  '上海市',
+  '天津市',
+  '重庆市',
+  '香港特别行政区',
+  '澳门特别行政区',
+];
+const MAP_LAYER_LIST=['road-label',  'waterway-label',  'natural-line-label',  
+                      'natural-point-label',  'water-line-label',  'water-point-label',  
+                      'poi-label',  'airport-label',  'settlement-subdivision-label',  
+                      'settlement-label',  'state-label',  'country-label',
+                     ];
 
 // styling: set to `true` if you want dash-line route
 const USE_DASH_LINE = true;
@@ -8,6 +20,8 @@ const USE_DASH_LINE = true;
 const LINE_OPACITY = 0.4;
 // styling: map height
 const MAP_HEIGHT = 600;
+//set to `false` if you want to hide the road label characters
+const ROAD_LABEL_DISPLAY = true;
 
 // IF you outside China please make sure IS_CHINESE = false
 const IS_CHINESE = true;
@@ -34,6 +48,7 @@ const VIRTUAL_RIDE_TITLE = IS_CHINESE ? '虚拟骑行' : 'Virtual Ride';
 const HIKE_TITLE = IS_CHINESE ? '徒步' : 'Hike';
 const ROWING_TITLE = IS_CHINESE ? '划船' : 'Rowing';
 const KAYAKING_TITLE = IS_CHINESE ? '皮划艇' : 'Kayaking';
+const SNOWBOARD_TITLE = IS_CHINESE ? '单板滑雪' : 'Snowboard';
 const ROAD_TRIP_TITLE = IS_CHINESE ? '自驾' : 'RoadTrip';
 const FLIGHT_TITLE = IS_CHINESE ? '飞行' : 'Flight';
 
@@ -51,6 +66,7 @@ const RUN_TITLES = {
   SWIM_TITLE,
   ROAD_TRIP_TITLE,
   FLIGHT_TITLE,
+  SNOWBOARD_TITLE,
 };
 
 export {
@@ -58,7 +74,9 @@ export {
   CHINESE_LOCATION_INFO_MESSAGE_SECOND,
   MAPBOX_TOKEN,
   MUNICIPALITY_CITIES_ARR,
+  MAP_LAYER_LIST,
   IS_CHINESE,
+  ROAD_LABEL_DISPLAY,
   INFO_MESSAGE,
   RUN_TITLES,
   USE_ANIMATION_FOR_GRID,
@@ -95,3 +113,4 @@ export const FLIGHT_COLOR = wpink;
 export const PROVINCE_FILL_COLOR = '#3F51B5';
 export const COUNTRY_FILL_COLOR = wpink;
 export const KAYAKING_COLOR = green;
+export const SNOWBOARD_COLOR = wpink;
