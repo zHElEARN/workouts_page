@@ -45,9 +45,6 @@ const paceToSpeed = (d) => {
   return ((1.0 / ((1000.0 / 60.0) * (1.0 / d))) * 60).toFixed(0).toString();
 }
 
-const formatRunTime = (distance,pace) => {
-  if (Number.isNaN(distance) || Number.isNaN(pace)) {
-    return '0min';
 const convertMovingTime2Sec = (moving_time) => {
   if (!moving_time) {
     return 0;
